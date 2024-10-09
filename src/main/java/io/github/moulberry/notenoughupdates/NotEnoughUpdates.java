@@ -481,8 +481,8 @@ public class NotEnoughUpdates {
 
 		if (mc != null && mc.theWorld != null && mc.thePlayer != null) {
 			if (mc.isSingleplayer() || mc.thePlayer.getClientBrand() == null ||
-				!mc.thePlayer.getClientBrand().toLowerCase(Locale.ROOT).contains("hypixel")) {
-				hasSkyblockScoreboard = false;
+				!mc.thePlayer.getClientBrand().toLowerCase(Locale.ROOT).contains("fakepixel")) {
+				hasSkyblockScoreboard = true;
 				return;
 			}
 
@@ -498,7 +498,7 @@ public class NotEnoughUpdates {
 				}
 			}
 
-			hasSkyblockScoreboard = false;
+			hasSkyblockScoreboard = true;
 		}
 	}
 }
